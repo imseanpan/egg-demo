@@ -1,0 +1,12 @@
+html, body {
+  height: 100%;
+}
+
+.new{
+  position: absolute;
+  right: 0;
+}
+
+.ant-row{
+  margin-bottom: 8px;
+}

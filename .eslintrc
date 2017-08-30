@@ -1,0 +1,26 @@
+{
+  "extends": "eslint-config-egg"
+  // "parser": "babel-eslint",
+  // "env": {
+  //   "browser": true,
+  //   "node": true
+  // },
+  // "globals": {
+  //   "document": false
+  // },
+  // "parserOptions": {
+  //   "ecmaVersion": 6,
+  //   "sourceType": "module",
+  //   "ecmaFeatures": {
+  //     "jsx": true
+  //   }
+  // },
+  // "plugins": [
+  //   "react"
+  // ],
+  // "rules": {
+  //   "react/jsx-uses-react": "error",
+  //   "react/jsx-uses-vars": "error",
+  //   "react/jsx-no-undef":"error"
+  // }
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="screen-orientation" content="portrait">
+  <link href="public/common/css/bootstrap.min.css" rel="stylesheet">
+  <link href="public/common/css/index.css" rel="stylesheet">
+  <script src="public/common/js/jquery.js"></script>
+  <script src="public/common/js/popper.js"></script>
+  <script src="public/common/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  {% block header %}
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+    <a class="navbar-brand" href="#">小地图</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+      aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item {{selected[0]}}">
+          <a class="nav-link" href="/">首页</a>
+        </li>
+        <li class="nav-item {{selected[1]}}">
+          <a class="nav-link" href="/human">人员管理</a>
+        </li>
+        <li class="nav-item {{selected[2]}}">
+          <a class="nav-link" href="/store">店铺管理</a>
+        </li>
+        <li class="nav-item {{selected[3]}}">
+          <a class="nav-link" href="/allocation">店铺分配</a>
+        </li>
+        <!-- <li class="nav-item">
+          <a class="nav-link disabled" href="#">图表</a>
+        </li> -->
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search"> -->
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">登录</button>
+      </form>
+    </div>
+  </nav>
+  {% endblock header %} {% block body %}
+  <div id="app"></div>
+  {% endblock body %} {% block script %} {% endblock script %}
+</body>
+
+</html>
